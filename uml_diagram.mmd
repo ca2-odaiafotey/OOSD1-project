@@ -1,0 +1,62 @@
+classDiagram
+    class StockItem {
+        -String stockCode
+        -int quantity
+        -double price
+        +StockItem(int quantity, double price, String stockCode)
+        +getStockCode() String
+        +setStockCode(String stockCode) void
+        +getQuantity() int
+        +setQuantity(int quantity) void
+        +getStockName() String
+        +getStockDescription() String
+        +addStock(int amount) void
+        +sellStock(int amount) boolean
+        +getVAT() double
+        +setPrice(double price) void
+        +getPriceWithoutVAT() double
+        +getPriceWithVAT() double
+        +toString() String
+    }
+
+    class NavSys {
+        +NavSys(int quantity, double price, String stockCode)
+        +getStockName() String
+        +getStockDescription() String
+        +toString() String
+    }
+
+    class DashCam {
+        -String resolution
+        +DashCam(int quantity, double price, String stockCode, String resolution)
+        +getResolution() String
+        +setResolution(String resolution) void
+        +getStockName() String
+        +getStockDescription() String
+        +toString() String
+    }
+
+    class CarMats {
+        -String color
+        +CarMats(int quantity, double price, String stockCode, String color)
+        +getColor() String
+        +setColor(String color) void
+        +getStockName() String
+        +getStockDescription() String
+        +toString() String
+    }
+
+    class AirFreshener {
+        -String scent
+        +AirFreshener(int quantity, double price, String stockCode, String scent)
+        +getScent() String
+        +setScent(String scent) void
+        +getStockName() String
+        +getStockDescription() String
+        +toString() String
+    }
+
+    StockItem <|-- NavSys
+    StockItem <|-- DashCam
+    StockItem <|-- CarMats
+    StockItem <|-- AirFreshener
