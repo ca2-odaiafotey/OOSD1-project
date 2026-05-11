@@ -1,6 +1,5 @@
 # Car Parts and Accessories Shop – OO Systems Development Project
 
-## Module: UFCFC3-30-1 Introduction to OO Systems Development
 
 ---
 
