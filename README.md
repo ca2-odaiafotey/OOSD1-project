@@ -1,6 +1,5 @@
 # Car Parts and Accessories Shop – OO Systems Development Project
 
-
 ---
 
 ## Project Description
